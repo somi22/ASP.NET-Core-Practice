@@ -13,6 +13,7 @@
     <None Remove="Controllers\V1\" />
     <None Remove="Contracts\" />
     <None Remove="Contracts\V1\" />
+    <None Remove="Installer\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -34,5 +35,6 @@
     <Folder Include="Controllers\V1\" />
     <Folder Include="Contracts\" />
     <Folder Include="Contracts\V1\" />
+    <Folder Include="Installers\" />
   </ItemGroup>
 </Project>

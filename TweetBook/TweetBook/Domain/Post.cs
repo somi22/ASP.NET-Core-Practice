@@ -6,4 +6,3 @@ namespace TweetBook.Domain
         public string Id { get; set; }
     }
 }
-
