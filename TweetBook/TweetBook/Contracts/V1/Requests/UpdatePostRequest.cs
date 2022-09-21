@@ -1,6 +1,8 @@
-﻿namespace TweetBook.Contracts.V1.Requests;
-
-public class UpdatePostRequest
+﻿namespace TweetBook.Contracts.V1.Requests
 {
-    public string Name { get; set; }
+    public class UpdatePostRequest
+    {
+        public string Name { get; set; }
+    }
 }
+

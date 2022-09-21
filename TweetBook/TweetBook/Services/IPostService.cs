@@ -1,11 +1,15 @@
-﻿using TweetBook.Domain;
+﻿using System;
+using System.Collections.Generic;
+using TweetBook.Domain;
 
-namespace TweetBook.Services;
-
-public interface IPostService
+namespace TweetBook.Services
 {
-    List<Post> GetPosts();
-    Post GetPostById(Guid postId);
+    public interface IPostService
+    {
+        List<Post> GetPosts();
+        Post GetPostById(Guid postId);
 
-    bool UpdatePost(Post postToUpdate);
+        bool UpdatePost(Post postToUpdate);
+    }
 }
+

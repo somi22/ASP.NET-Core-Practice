@@ -57,14 +57,19 @@ namespace Tweetbook.Controllers.V1
         // ApiRoutes에 적은 `postId`이름과 동일해야함
         public IActionResult Update([FromRoute]Guid postId, [FromBody] UpdatePostRequest request)
         {
+            // for practice only!
             var post = new Post
             {
                 Id = postId,
                 Name = request.Name
             };
 
+            var updated = _postService.UpdatePost(post);
 
-            return Ok(post);
+            if(updated)
+                return Ok(post);
+
+            return NotFound();
         }
 
         [HttpPost(ApiRoutes.Posts.Create)]
