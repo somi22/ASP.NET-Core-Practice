@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-TweetBook-29D31D2F-95CA-4AD9-B9EF-3C58AFF1E7B2</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Options\" />
+    <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Domain\" />
+    <None Remove="Controllers\V1\" />
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\V1\" />
+    <None Remove="Installer\" />
+    <None Remove="Contracts\V1\Requests\" />
+    <None Remove="Contracts\V1\Responses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.26" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.26" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.26" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.26" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.26" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Options\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Controllers\V1\" />
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\V1\" />
+    <Folder Include="Installers\" />
+    <Folder Include="Contracts\V1\Requests\" />
+    <Folder Include="Contracts\V1\Responses\" />
+  </ItemGroup>
+</Project>
