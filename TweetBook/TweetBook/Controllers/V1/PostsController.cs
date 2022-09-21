@@ -5,19 +5,25 @@ using TweetBook.Contracts.V1;
 using System;
 using TweetBook.Contracts.V1.Requests;
 using TweetBook.Contracts.V1.Responses;
+using System.Linq;
 
 namespace Tweetbook.Controllers.V1
 {
     public class PostsController : Controller
     {
-        private List<Post> _posts;
+        private readonly List<Post> _posts;
 
         public PostsController()
         {
             _posts = new List<Post>();
             for (var i = 0; i < 5; i++)
             {
-                _posts.Add(new Post { Id = Guid.NewGuid().ToString() });
+                _posts.Add(new Post
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = $"Post Name {i}"
+
+                });
             }
         }
 
@@ -27,6 +33,15 @@ namespace Tweetbook.Controllers.V1
             return Ok(_posts);
         }
 
+        [HttpGet(ApiRoutes.Posts.Get)]
+        // ApiRoutes에 적은 `postId`이름과 동일해야함
+        public IActionResult Get([FromRoute]Guid postId)
+        {
+            var post = _posts.SingleOrDefault(x => x.Id == postId);
+
+
+            return Ok(_posts);
+        }
 
 
         [HttpPost(ApiRoutes.Posts.Create)]
@@ -50,4 +65,3 @@ namespace Tweetbook.Controllers.V1
         }
     }
 }
-

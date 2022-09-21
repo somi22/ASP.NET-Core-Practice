@@ -6,24 +6,33 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.TweetBook PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TweetBook/Installers/IInstaller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TweetBook/Controllers/V1/PostsController.cs">
     <Files>
       <File FileName="TweetBook/Domain/Post.cs" Line="8" Column="2" />
       <File FileName="TweetBook/Program.cs" Line="16" Column="1" />
-      <File FileName="TweetBook/Options/SwaggerOptions.cs" Line="1" Column="1" />
-      <File FileName="TweetBook/appsettings.json" Line="5" Column="18" />
-      <File FileName="TweetBook/Startup.cs" Line="36" Column="1" />
-      <File FileName="TweetBook/IInstaller.cs" Line="5" Column="31" />
-      <File FileName="TweetBook/Installers/MvcInstaller.cs" Line="21" Column="16" />
-      <File FileName="TweetBook/Installers/DbInstaller.cs" Line="8" Column="31" />
-      <File FileName="TweetBook/Installers/InstallerExtensions.cs" Line="19" Column="2" />
+      <File FileName="TweetBook/Controllers/V1/PostsController.cs" Line="49" Column="47" />
+      <File FileName="TweetBook/Contracts/V1/ApiRoutes.cs" Line="7" Column="41" />
+      <File FileName="TweetBook/Contracts/V1/Requests/CreatePostRequest.cs" Line="10" Column="1" />
+      <File FileName="TweetBook/Contracts/V1/Responses/PostResponse.cs" Line="6" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TweetBook" expanded="True">
             <Node name="TweetBook" expanded="True">
+              <Node name="Contracts" expanded="True">
+                <Node name="V1" expanded="True">
+                  <Node name="Requests" expanded="True" />
+                  <Node name="Responses" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="V1" expanded="True" />
+              </Node>
+              <Node name="Domain" expanded="True" />
               <Node name="Installers" expanded="True" />
+              <Node name="Options" expanded="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
