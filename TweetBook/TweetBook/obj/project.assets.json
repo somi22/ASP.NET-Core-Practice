@@ -2039,11 +2039,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/somi/Projects/TweetBook/TweetBook/TweetBook.csproj",
+      "projectUniqueName": "/Users/somi/Documents/C#/ASP.NET-Core-Practice/TweetBook/TweetBook/TweetBook.csproj",
       "projectName": "TweetBook",
-      "projectPath": "/Users/somi/Projects/TweetBook/TweetBook/TweetBook.csproj",
+      "projectPath": "/Users/somi/Documents/C#/ASP.NET-Core-Practice/TweetBook/TweetBook/TweetBook.csproj",
       "packagesPath": "/Users/somi/.nuget/packages/",
-      "outputPath": "/Users/somi/Projects/TweetBook/TweetBook/obj/",
+      "outputPath": "/Users/somi/Documents/C#/ASP.NET-Core-Practice/TweetBook/TweetBook/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/somi/.nuget/NuGet/NuGet.Config"

@@ -9,6 +9,10 @@
     <None Remove="Controllers\" />
     <None Remove="Options\" />
     <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Domain\" />
+    <None Remove="Controllers\V1\" />
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\V1\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -26,5 +30,9 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Options\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Controllers\V1\" />
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\V1\" />
   </ItemGroup>
 </Project>
