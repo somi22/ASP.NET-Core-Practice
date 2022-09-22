@@ -91,5 +91,14 @@ namespace Tweetbook.Controllers.V1
 
             return Created(locationUri, response);
         }
+
+        [HttpDelete(ApiRoutes.Posts.Delete)]
+        public IActionResult Delete([FromRoute] Guid postId)
+        {
+            var deleted = _postService.DeletePost(postId);
+            if (deleted)
+                return NoContent();
+            return NotFound();
+        }
     }
 }
