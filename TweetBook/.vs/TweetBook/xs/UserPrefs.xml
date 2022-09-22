@@ -1,19 +1,17 @@
 ﻿<Properties StartupConfiguration="{48CFEFB3-6365-4F5E-BD1A-DC162D2D7DD8}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.TweetBook PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TweetBook/Controllers/V1/PostsController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TweetBook/Data/Migrations/ApplicationDbContextModelSnapshot.cs">
     <Files>
-      <File FileName="TweetBook/Domain/Post.cs" Line="8" Column="2" />
-      <File FileName="TweetBook/Program.cs" Line="16" Column="1" />
-      <File FileName="TweetBook/Controllers/V1/PostsController.cs" Line="49" Column="47" />
-      <File FileName="TweetBook/Contracts/V1/ApiRoutes.cs" Line="7" Column="41" />
-      <File FileName="TweetBook/Contracts/V1/Requests/CreatePostRequest.cs" Line="10" Column="1" />
-      <File FileName="TweetBook/Contracts/V1/Responses/PostResponse.cs" Line="6" Column="37" />
+      <File FileName="TweetBook/appsettings.json" Line="14" Column="4" />
+      <File FileName="TweetBook/Data/DataContext.cs" Line="1" Column="1" />
+      <File FileName="TweetBook/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" Line="15" Column="76" />
+      <File FileName="TweetBook/Data/Migrations/ApplicationDbContextModelSnapshot.cs" Line="11" Column="22" />
+      <File FileName="TweetBook/Controllers/V1/PostsController.cs" Line="53" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,10 +27,16 @@
               <Node name="Controllers" expanded="True">
                 <Node name="V1" expanded="True" />
               </Node>
+              <Node name="Data" expanded="True">
+                <Node name="Migrations" expanded="True">
+                  <Node name="00000000000000_CreateIdentitySchema.cs" expanded="True" />
+                </Node>
+              </Node>
               <Node name="Domain" expanded="True" />
               <Node name="Installers" expanded="True" />
               <Node name="Options" expanded="True" />
               <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -42,4 +46,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
 </Properties>
